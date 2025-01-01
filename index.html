@@ -28,746 +28,863 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Add Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- Add Google Font for fancy header -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <!-- Spinner Start -->
+        <!-- Spinner -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+            <div class="spinner-border text-primary" role="status"></div>
         </div>
-        <!-- Spinner End -->
 
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
-                </div>
-            </nav>
-        </div>
-        <!-- Navbar End -->
-
-        <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">Anna Ratnavale</h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 Hello I'm Anna</p>
-                                <h1 class="display-6 text-white mb-0">Finance Graduate Based in Maryland</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/header.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">Finance Graduate & Aspiring Financial Analyst</h1>
-                                    <p class="mb-4">Recent finance graduate from the University of Maryland with a strong foundation in creating, analyzing, and forecasting financial statements. Currently seeking a full-time entry-level position as a financial analyst.</p>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">Potomac, Maryland, United States</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">anna.ratnavale@email.com</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-4">
-                                        <i class="fab fa-linkedin text-primary me-3"></i>
-                                        <p class="text-dark mb-0">linkedin.com/in/annaratnavale</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-github text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="img/ar.jpg" alt="AR Logo" class="brand-logo me-3">
+                <h1 class="display-6 animated slideInDown">Anna Ratnavale</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#education" class="nav-item nav-link">Education</a>
+                    <a href="#services" class="nav-item nav-link">Services</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+                    
                 </div>
             </div>
+        </nav>
+
+        <!-- Add this after navbar -->
+        <div class="finance-icons">
+            <i class="fas fa-dollar-sign floating-icon"></i>
+            <i class="fas fa-coins floating-icon"></i>
+            <i class="fas fa-chart-line floating-icon"></i>
+            <i class="fas fa-piggy-bank floating-icon"></i>
+            <i class="fas fa-money-bill-wave floating-icon"></i>
+            <i class="fas fa-chart-pie floating-icon"></i>
+            <i class="fas fa-percentage floating-icon"></i>
+            <i class="fas fa-hand-holding-dollar floating-icon"></i>
         </div>
-        <!-- Header End -->
 
+        <!-- Add particles-js div here -->
+        <div id="particles-js"></div>
 
-        <!-- About Start -->
-        <div class="container-fluid" id="pigraAbout">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="about-header bg-dark h-100 pt-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">About Me</p>
-                                <h1 class="display-6 text-white mb-0">Finance Graduate based in Maryland, USA</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="about-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-5">
-                                    <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/Anna1.jpeg" class="img-fluid w-100" alt="Image">
-                                        <div class="sosial-icon">
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h4 class="mb-4">Hello, I'm Anna Ratnavale</h4>
-                                    <p class="mb-4">Ambitious and goal-oriented finance professional with a strong foundation in financial analysis and customer service. I plan to pursue my CFA license within the next five years to further enhance my expertise in the finance industry. I am excited about the opportunity to bring my analytical mindset and dedication to achieving results in a dynamic work environment.</p>
-                                    <div class="row g-4 mb-4">
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Education:</strong> University of Maryland</p>
-                                            <p><strong class="fw-bold text-dark">Major:</strong> Accounting and Finance</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Location:</strong> Potomac, Maryland</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Graduation:</strong> Class of 2024</p>
-                                            <p><strong class="fw-bold text-dark">Email:</strong> anna.ratnavale@email.com</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Available:</strong> For Full-time Positions</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary py-2 px-4"><i class="fas fa-download me-2"></i>Download Resume</a>
+        <!-- Rest of your content -->
+        <div id="home" class="container-fluid p-0 mb-5">
+            <!-- Your header carousel -->
+            <div class="container-fluid" id="pigraHome">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-3">
+                            <div class="header-content bg-dark h-100 pt-6 pb-6">
+                                <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
+                                    <h1 class="display-6 text-white mb-0"></h1>
+                                </a>
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                                    <p class="text-white sub-title">👋 Hello I'm Anna</p>
+                                    <h1 class="display-6 text-white mb-0">Finance Graduate Based in Maryland</h1>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Education Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="education-header bg-dark h-100 pt-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Education</p>
-                                <h1 class="display-6 text-white mb-0">My education qualification</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="education-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">University of Maryland</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2020 - 2024
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Bachelor's in Accounting and Finance</h4>
-                                        <p class="mb-2">Class of 2024</p>
-                                        <div class="mt-3">
-                                            <h5 class="mb-2">Skills:</h5>
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary">Microsoft PowerPoint</span>
-                                                <span class="badge bg-primary">Microsoft Word</span>
-                                                <span class="badge bg-primary">Microsoft Excel</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Certifications Section -->
-                                <div class="col-12 mt-4">
-                                    <h3 class="mb-4">Licenses & Certifications</h3>
-                                </div>
-                                
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Bloomberg Market Concepts</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> September 2024
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Bloomberg</h4>
-                                        <p class="mb-0">Credential ID: uuHPAQ3My9iijnavXwyAsqHm</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Global Financial Markets and Instruments</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> March 2023
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Rice University - Susanne M. Glasscock School of Continuing Studies</h4>
-                                        <p class="mb-0">Credential ID: 4XBR83EAKB5S</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Technical Support Fundamentals</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> August 2021
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Google</h4>
-                                        <p class="mb-0">Credential ID: E7H4YBM2H5DH</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Education End -->
-
-        <!-- Experience Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Experience</p>
-                                <h1 class="display-6 text-white mb-0">My work experience</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="experience-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-xl-square me-3" style="background-color: #F58220;">
-                                                <span class="fas fa-university fa-2x text-white"></span>
-                                            </div>
-                                            <p class="fs-5 mb-0 me-4">PNC Bank</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> May 2023 - Nov 2023
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Bank Teller</h4>
-                                        <ul class="mb-0">
-                                            <li>Ensured accurate deposits, withdrawals, and official checks while maintaining high levels of customer service</li>
-                                            <li>Assisted in organizing legal documents and scheduling appointments</li>
-                                            <li>Engaged customers in financial products and made several referrals</li>
-                                            <li>Received consistent 10/10 customer service surveys in the last two months</li>
-                                            <li>Developed communication and problem-solving skills by responding to customer complaints</li>
-                                        </ul>
-                                        <div class="mt-3">
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary">Customer Service</span>
-                                                <span class="badge bg-primary">Cash Handling</span>
-                                                <span class="badge bg-primary">Banking Operations</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-xl-square me-3" style="background-color: #1E4D8C;">
-                                                <span class="fas fa-chart-line fa-2x text-white"></span>
-                                            </div>
-                                            <p class="fs-5 mb-0 me-4">Wall Street Oasis</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Jul 2022 - Oct 2022
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Financial Analyst Intern</h4>
-                                        <ul class="mb-0">
-                                            <li>Conducted research and analysis about different financial topics</li>
-                                            <li>Wrote three articles and had them published on the company website on trust banks, credit report analysis, and return on total capital</li>
-                                            <li>Assisted colleagues with editing their work</li>
-                                            <li>Developed skills with research, analysis, and organization</li>
-                                        </ul>
-                                        <div class="mt-3">
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary">Financial Analysis</span>
-                                                <span class="badge bg-primary">Research</span>
-                                                <span class="badge bg-primary">Content Writing</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-xl-square me-3" style="background-color: #2A4F9B;">
-                                                <span class="fas fa-balance-scale fa-2x text-white"></span>
-                                            </div>
-                                            <p class="fs-5 mb-0 me-4">Zukerberg & Halperin, PLLC</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Jul 2021 - Jan 2022
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Legal Intern</h4>
-                                        <ul class="mb-0">
-                                            <li>Litigation support for a busy law office, including document management, client outreach, and liaison with agencies and record custodians</li>
-                                            <li>Scheduled and hosted meetings with clients and colleagues</li>
-                                            <li>Completed client intake forms</li>
-                                        </ul>
-                                        <div class="mt-3">
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary">Legal Documentation</span>
-                                                <span class="badge bg-primary">Client Relations</span>
-                                                <span class="badge bg-primary">Administrative Support</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-xl-square me-3" style="background-color: #1C3F95;">
-                                                <span class="fas fa-home fa-2x text-white"></span>
-                                            </div>
-                                            <p class="fs-5 mb-0 me-4">Remax Associates</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Sep 2019 - Mar 2020
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Retail Sales Intern</h4>
-                                        <ul class="mb-0">
-                                            <li>Back office support including administrative duties, client outreach, and filing and organization</li>
-                                            <li>Gained knowledge in using Microsoft Word, Excel, and PowerPoint</li>
-                                        </ul>
-                                        <div class="mt-3">
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary">Microsoft Word</span>
-                                                <span class="badge bg-primary">Microsoft PowerPoint</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Experience End -->
-
-
-        <!-- Skills Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="skills-header h-100 bg-dark pt-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Skills</p>
-                                <h1 class="display-6 text-white mb-0">My expertise skills</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <!-- Technical Skills -->
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-file-excel fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">95</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Microsoft Excel</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-file-word fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">90</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Microsoft Word</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-file-powerpoint fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">85</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">PowerPoint</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-chart-line fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">85</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Financial Analysis</p>
-                                    </div>
-                                </div>
-
-                                <!-- Professional Skills -->
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-brain fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">90</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Analytical Skills</p>
-                                        <span class="badge bg-primary mt-2">1 endorsement</span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-chess fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">85</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Strategy</p>
-                                        <span class="badge bg-primary mt-2">1 endorsement</span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-users fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">80</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Leadership</p>
-                                        <span class="badge bg-primary mt-2">1 endorsement</span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-tasks fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">85</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Back Office Operations</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Skills End -->
-
-
-        <!-- Service Start -->
-        <div class="container-fluid" id="pigraService">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="service-header h-100 bg-dark pt-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">My Services</p>
-                                <h1 class="display-6 text-white mb-0">What I do for you</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="service-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-chart-line fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Financial Analysis</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Comprehensive analysis of financial statements, market trends, and investment opportunities</p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> Statement Analysis</p>
-                                                <p><i class="fa fa-check me-2"></i> Market Research</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Financial Modeling</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-calculator fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Financial Planning</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Development of comprehensive financial plans and strategies using Bloomberg Terminal expertise</p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> Risk Assessment</p>
-                                                <p><i class="fa fa-check me-2"></i> Portfolio Analysis</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Market Analysis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-file-invoice-dollar fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Financial Reporting</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Creation of detailed financial reports and presentations using advanced Microsoft Office skills</p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> Excel Analysis</p>
-                                                <p><i class="fa fa-check me-2"></i> Data Visualization</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Report Creation</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="testimonial-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Recommendations</p>
-                                <h1 class="display-6 text-white mb-0">Professional References</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="testimonial-content h-100 pt-6 ps-6 pb-6">
-                            <div class="testimonial-carousel owl-carousel bg-light wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-1.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">Sarah Johnson</h5>
-                                                <p class="mb-0">Branch Manager, PNC Bank</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>"Anna demonstrated exceptional customer service skills and attention to detail during her time as a Bank Teller. Her ability to handle complex transactions while maintaining a professional demeanor was impressive."</p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-2.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">Michael Chen</h5>
-                                                <p class="mb-0">Senior Editor, Wall Street Oasis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>"As an intern, Anna produced well-researched financial articles that demonstrated strong analytical skills. Her work on trust banks and credit analysis showed a deep understanding of complex financial concepts."</p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-3.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">David Martinez</h5>
-                                                <p class="mb-0">Professor, University of Maryland</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>"Anna consistently demonstrated strong analytical abilities in her finance coursework. Her dedication to understanding complex financial concepts and attention to detail set her apart from her peers."</p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Contact/Location Start -->
-        <div class="container-fluid" id="pigraContact">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="contact-header h-100 bg-dark pt-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Location</p>
-                                <h1 class="display-6 text-white mb-0">Based in</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                       <div class="contact-content h-100 pt-6 ps-6 pb-6">
-                            <div class="bg-light p-4">
+                        <div class="col-12 col-lg-9">
+                            <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
                                 <div class="row g-5">
-                                    <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Location</h4>
-                                                <p class="mb-0">Potomac, Maryland, USA</p>
-                                            </div>
+                                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                            <img src="img/header.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
                                         </div>
                                     </div>
-                                    <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="rounded">
-                                            <iframe class="rounded w-100" 
-                                            style="height: 400px;" 
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49623.13569827124!2d-77.20943562167967!3d39.01793010000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6399b91fb4393%3A0x69f1fd744c87c76b!2sPotomac%2C%20MD!5e0!3m2!1sen!2sus!4v1709764006961!5m2!1sen!2sus" 
-                                            loading="lazy" 
-                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h1 class="display-6 mb-4">Finance Graduate & Aspiring Financial Analyst</h1>
+                                        <p class="mb-4">Recent finance graduate from the University of Maryland with a strong foundation in creating, analyzing, and forecasting financial statements. Currently seeking a full-time entry-level position as a financial analyst.</p>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                            <p class="text-dark mb-0">Potomac, Maryland, United States</p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-envelope text-primary me-3"></i>
+                                            <p class="text-dark mb-0">anna.ratnavale@email.com</p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-4">
+                                            <i class="fab fa-linkedin text-primary me-3"></i>
+                                            <p class="text-dark mb-0">https://www.linkedin.com/in/anna-ratnavale-90a429202</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-primary btn-sm-square me-3" href="https://www.linkedin.com/in/anna-ratnavale-90a429202" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a>
+                                            <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-github text-white"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Contact/Location End -->
 
+            <!-- Your other sections -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark border-bottom-0">
-            <div class="container wow fadeIn" data-wow-delay="0.1s">
-                <div class="row g-0">
-                    <div class="col-12">
-                       <div class="footer-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 text-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Anna Ratnavale</a>, All right reserved.</span>
-                                </div>
-                                <div class="col-12 text-center text-body">
-                                    <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
-                                    <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
-                                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                                    Designed By <a class="border-bottom text-white" href="https://google.com">Codex</a>
+            <!-- About Section -->
+            <div id="about" class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-3">
+                            <div class="about-header bg-dark h-100 pt-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">About Me</p>
+                                    <h1 class="display-6 text-white mb-0">Finance Graduate based in Maryland, USA</h1>
                                 </div>
                             </div>
-                       </div>        
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="about-content h-100 pt-6 ps-6 pb-6">
+                                <div class="row g-5">
+                                    <div class="col-xl-5">
+                                        <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
+                                            <img src="img/Anna1.jpeg" class="img-fluid w-100" alt="Image">
+                                            <div class="sosial-icon">
+                                                <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                                <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                                <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                                <a class="btn btn-light btn-sm-square mb-3" href="https://www.linkedin.com/in/anna-ratnavale-90a429202" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h4 class="mb-4">Hello, I'm Anna Ratnavale</h4>
+                                        <p class="mb-4">Ambitious and goal-oriented finance professional with a strong foundation in financial analysis and customer service. I plan to pursue my CFA license within the next five years to further enhance my expertise in the finance industry. I am excited about the opportunity to bring my analytical mindset and dedication to achieving results in a dynamic work environment.</p>
+                                        <div class="row g-4 mb-4">
+                                            <div class="col-6">
+                                                <p><strong class="fw-bold text-dark">Education:</strong> University of Maryland</p>
+                                                <p><strong class="fw-bold text-dark">Major:</strong> Accounting and Finance</p>
+                                                <p class="mb-0"><strong class="fw-bold text-dark">Location:</strong> Potomac, Maryland</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p><strong class="fw-bold text-dark">Graduation:</strong> Class of 2024</p>
+                                                <p><strong class="fw-bold text-dark">Email:</strong> anna.ratnavale@email.com</p>
+                                                <p class="mb-0"><strong class="fw-bold text-dark">Available:</strong> For Full-time Positions</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-primary py-2 px-4"><i class="fas fa-download me-2"></i>Download Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
+            <!-- Education Start -->
+            <div id="education" class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="education-header bg-dark h-100 pt-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">Education</p>
+                                    <h1 class="display-6 text-white mb-0">My education qualification</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="education-content h-100 pt-6 ps-6 pb-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <p class="fs-5 mb-0 me-4">University of Maryland</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> 2020 - 2024
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Bachelor's in Accounting and Finance</h4>
+                                            <p class="mb-2">Class of 2024</p>
+                                            <div class="mt-3">
+                                                <h5 class="mb-2">Skills:</h5>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="badge bg-primary">Microsoft PowerPoint</span>
+                                                    <span class="badge bg-primary">Microsoft Word</span>
+                                                    <span class="badge bg-primary">Microsoft Excel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+                                    <!-- Certifications Section -->
+                                    <div class="col-12 mt-4">
+                                        <h3 class="mb-4">Licenses & Certifications</h3>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <p class="fs-5 mb-0 me-4">Bloomberg Market Concepts</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> September 2024
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Bloomberg</h4>
+                                            <p class="mb-0">Credential ID: uuHPAQ3My9iijnavXwyAsqHm</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <p class="fs-5 mb-0 me-4">Global Financial Markets and Instruments</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> March 2023
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Rice University - Susanne M. Glasscock School of Continuing Studies</h4>
+                                            <p class="mb-0">Credential ID: 4XBR83EAKB5S</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <p class="fs-5 mb-0 me-4">Technical Support Fundamentals</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> August 2021
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Google</h4>
+                                            <p class="mb-0">Credential ID: E7H4YBM2H5DH</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education End -->
+
+            <!-- Experience Start -->
+            <div id="experience" class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">Experience</p>
+                                    <h1 class="display-6 text-white mb-0">My work experience</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="experience-content h-100 pt-6 ps-6 pb-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="btn-xl-square me-3" style="background-color: #F58220;">
+                                                    <span class="fas fa-university fa-2x text-white"></span>
+                                                </div>
+                                                <p class="fs-5 mb-0 me-4">PNC Bank</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> May 2023 - Nov 2023
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Bank Teller</h4>
+                                            <ul class="mb-0">
+                                                <li>Ensured accurate deposits, withdrawals, and official checks while maintaining high levels of customer service</li>
+                                                <li>Assisted in organizing legal documents and scheduling appointments</li>
+                                                <li>Engaged customers in financial products and made several referrals</li>
+                                                <li>Received consistent 10/10 customer service surveys in the last two months</li>
+                                                <li>Developed communication and problem-solving skills by responding to customer complaints</li>
+                                            </ul>
+                                            <div class="mt-3">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="badge bg-primary">Customer Service</span>
+                                                    <span class="badge bg-primary">Cash Handling</span>
+                                                    <span class="badge bg-primary">Banking Operations</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="btn-xl-square me-3" style="background-color: #1E4D8C;">
+                                                    <span class="fas fa-chart-line fa-2x text-white"></span>
+                                                </div>
+                                                <p class="fs-5 mb-0 me-4">Wall Street Oasis</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> Jul 2022 - Oct 2022
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Financial Analyst Intern</h4>
+                                            <ul class="mb-0">
+                                                <li>Conducted research and analysis about different financial topics</li>
+                                                <li>Wrote three articles and had them published on the company website on trust banks, credit report analysis, and return on total capital</li>
+                                                <li>Assisted colleagues with editing their work</li>
+                                                <li>Developed skills with research, analysis, and organization</li>
+                                            </ul>
+                                            <div class="mt-3">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="badge bg-primary">Financial Analysis</span>
+                                                    <span class="badge bg-primary">Research</span>
+                                                    <span class="badge bg-primary">Content Writing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="btn-xl-square me-3" style="background-color: #2A4F9B;">
+                                                    <span class="fas fa-balance-scale fa-2x text-white"></span>
+                                                </div>
+                                                <p class="fs-5 mb-0 me-4">Zukerberg & Halperin, PLLC</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> Jul 2021 - Jan 2022
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Legal Intern</h4>
+                                            <ul class="mb-0">
+                                                <li>Litigation support for a busy law office, including document management, client outreach, and liaison with agencies and record custodians</li>
+                                                <li>Scheduled and hosted meetings with clients and colleagues</li>
+                                                <li>Completed client intake forms</li>
+                                            </ul>
+                                            <div class="mt-3">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="badge bg-primary">Legal Documentation</span>
+                                                    <span class="badge bg-primary">Client Relations</span>
+                                                    <span class="badge bg-primary">Administrative Support</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="btn-xl-square me-3" style="background-color: #1C3F95;">
+                                                    <span class="fas fa-home fa-2x text-white"></span>
+                                                </div>
+                                                <p class="fs-5 mb-0 me-4">Remax Associates</p>
+                                                <div>
+                                                    <span class="fa fa-calendar me-1"></span> Sep 2019 - Mar 2020
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-3">Retail Sales Intern</h4>
+                                            <ul class="mb-0">
+                                                <li>Back office support including administrative duties, client outreach, and filing and organization</li>
+                                                <li>Gained knowledge in using Microsoft Word, Excel, and PowerPoint</li>
+                                            </ul>
+                                            <div class="mt-3">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="badge bg-primary">Microsoft Word</span>
+                                                    <span class="badge bg-primary">Microsoft PowerPoint</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience End -->
+
+
+            <!-- Skills Section -->
+            <div class="container-fluid" id="skills">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="skills-header bg-dark h-100 pt-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">My Skills</p>
+                                    <h1 class="display-6 text-white mb-0">Professional Skills</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="skills-content h-100 pt-6 ps-6 pb-6">
+                                <!-- First Row -->
+                                <div class="row g-4 mb-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-chart-line fa-3x mb-3" style="color: #0077B5;"></i>
+                                                <h5 class="skill-title">Financial Planning</h5>
+                                                <p class="skill-description">Strategic financial guidance for your future goals</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-chart-bar fa-3x mb-3" style="color: #1DA1F2;"></i>
+                                                <h5 class="skill-title">Investment Analysis</h5>
+                                                <p class="skill-description">Data-driven investment strategies and insights</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-shield-alt fa-3x mb-3" style="color: #FF6B6B;"></i>
+                                                <h5 class="skill-title">Risk Management</h5>
+                                                <p class="skill-description">Protecting assets through strategic planning</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Second Row -->
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-briefcase fa-3x mb-3" style="color: #4CAF50;"></i>
+                                                <h5 class="skill-title">Portfolio Management</h5>
+                                                <p class="skill-description">Optimizing investment portfolios for success</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-coins fa-3x mb-3" style="color: #FFD700;"></i>
+                                                <h5 class="skill-title">Wealth Management</h5>
+                                                <p class="skill-description">Comprehensive wealth building strategies</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="skill-card">
+                                            <div class="skill-content">
+                                                <i class="fa fa-calculator fa-3x mb-3" style="color: #9C27B0;"></i>
+                                                <h5 class="skill-title">Tax Planning</h5>
+                                                <p class="skill-description">Efficient tax strategies and solutions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Service Start -->
+            <div id="services" class="container-fluid fact py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="service-header h-100 bg-dark pt-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">My Services</p>
+                                    <h1 class="display-6 text-white mb-0">What I do for you</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="service-content h-100 pt-6 ps-6 pb-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="row g-4 align-items-center">
+                                                <div class="col-xl-2">
+                                                    <i class="fas fa-chart-line fa-3x"></i>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <a href="#" class="h4 mb-0">Financial Analysis</a>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <p class="mb-0">Comprehensive analysis of financial statements, market trends, and investment opportunities</p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p><i class="fa fa-check me-2"></i> Statement Analysis</p>
+                                                    <p><i class="fa fa-check me-2"></i> Market Research</p>
+                                                    <p class="mb-0"><i class="fa fa-check me-2"></i> Financial Modeling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="row g-4 align-items-center">
+                                                <div class="col-xl-2">
+                                                    <i class="fas fa-calculator fa-3x"></i>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <a href="#" class="h4 mb-0">Financial Planning</a>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <p class="mb-0">Development of comprehensive financial plans and strategies using Bloomberg Terminal expertise</p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p><i class="fa fa-check me-2"></i> Risk Assessment</p>
+                                                    <p><i class="fa fa-check me-2"></i> Portfolio Analysis</p>
+                                                    <p class="mb-0"><i class="fa fa-check me-2"></i> Market Analysis</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="row g-4 align-items-center">
+                                                <div class="col-xl-2">
+                                                    <i class="fas fa-file-invoice-dollar fa-3x"></i>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <a href="#" class="h4 mb-0">Financial Reporting</a>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <p class="mb-0">Creation of detailed financial reports and presentations using advanced Microsoft Office skills</p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p><i class="fa fa-check me-2"></i> Excel Analysis</p>
+                                                    <p><i class="fa fa-check me-2"></i> Data Visualization</p>
+                                                    <p class="mb-0"><i class="fa fa-check me-2"></i> Report Creation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+            <!-- Testimonial Start -->
+            <div id="testimonials" class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="testimonial-header h-100 bg-dark pt-6 pe-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">Recommendations</p>
+                                    <h1 class="display-6 text-white mb-0">Professional References</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="testimonial-content h-100 pt-6 ps-6 pb-6">
+                                <div class="testimonial-carousel owl-carousel bg-light wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
+                                        <div class="row gy-4 gx-2 mb-4">
+                                            <div class="col-sm-6">
+                                                <div class="d-flex justify-content-sm-end">
+                                                    <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
+                                                        <img src="img/testimonial-img-1.jpg" class="img-fluid" style="object-fit: cover;" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <h5 class="mb-2">Sarah Johnson</h5>
+                                                    <p class="mb-0">Branch Manager, PNC Bank</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-sm-center">
+                                            <p>"Anna demonstrated exceptional customer service skills and attention to detail during her time as a Bank Teller. Her ability to handle complex transactions while maintaining a professional demeanor was impressive."</p>
+                                            <div class="d-flex justify-content-sm-center">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
+                                        <div class="row gy-4 gx-2 mb-4">
+                                            <div class="col-sm-6">
+                                                <div class="d-flex justify-content-sm-end">
+                                                    <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
+                                                        <img src="img/testimonial-img-2.jpg" class="img-fluid" style="object-fit: cover;" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <h5 class="mb-2">Michael Chen</h5>
+                                                    <p class="mb-0">Senior Editor, Wall Street Oasis</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-sm-center">
+                                            <p>"As an intern, Anna produced well-researched financial articles that demonstrated strong analytical skills. Her work on trust banks and credit analysis showed a deep understanding of complex financial concepts."</p>
+                                            <div class="d-flex justify-content-sm-center">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
+                                        <div class="row gy-4 gx-2 mb-4">
+                                            <div class="col-sm-6">
+                                                <div class="d-flex justify-content-sm-end">
+                                                    <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
+                                                        <img src="img/testimonial-img-3.jpg" class="img-fluid" style="object-fit: cover;" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <h5 class="mb-2">David Martinez</h5>
+                                                    <p class="mb-0">Professor, University of Maryland</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-sm-center">
+                                            <p>"Anna consistently demonstrated strong analytical abilities in her finance coursework. Her dedication to understanding complex financial concepts and attention to detail set her apart from her peers."</p>
+                                            <div class="d-flex justify-content-sm-center">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
+            <!-- Contact/Location Start -->
+            <div id="contact" class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-lg-3">
+                            <div class="contact-header h-100 bg-dark pt-6 pb-6">
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="text-white sub-title">Location</p>
+                                    <h1 class="display-6 text-white mb-0">Based in</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                           <div class="contact-content h-100 pt-6 ps-6 pb-6">
+                                <div class="bg-light p-4">
+                                    <div class="row g-5">
+                                        <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="d-flex mb-4">
+                                                <div class="btn-xl-square bg-primary text-white me-3">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </div>
+                                                <div>
+                                                    <h4>Location</h4>
+                                                    <p class="mb-0">Potomac, Maryland, USA</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="rounded">
+                                                <iframe class="rounded w-100" 
+                                                style="height: 400px;" 
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49623.13569827124!2d-77.20943562167967!3d39.01793010000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6399b91fb4393%3A0x69f1fd744c87c76b!2sPotomac%2C%20MD!5e0!3m2!1sen!2sus!4v1709764006961!5m2!1sen!2sus" 
+                                                loading="lazy" 
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact/Location End -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid footer bg-dark border-bottom-0">
+                <div class="container wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                           <div class="footer-content h-100 pt-6 ps-6 pb-6">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-12 text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-light btn-md-square me-0" href="https://www.linkedin.com/in/anna-ratnavale-90a429202" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Anna Ratnavale</a>, All right reserved.</span>
+                                    </div>
+                                  
+                                </div>
+                           </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+            
+            <!-- Scripts -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+            <!-- Add particle.js before your main.js -->
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="js/main.js"></script>
+            
+            <script>
+                // Add this to initialize particles
+                window.onload = function() {
+                    // Remove spinner
+                    document.querySelector("#spinner").classList.remove("show");
+                    
+                    // Initialize particles
+                    particlesJS("particles-js", {
+                        "particles": {
+                            "number": {
+                                "value": 100,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 800
+                                }
+                            },
+                            "color": {
+                                "value": "#2124B1"
+                            },
+                            "shape": {
+                                "type": "circle"
+                            },
+                            "opacity": {
+                                "value": 0.4,
+                                "random": false
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#2124B1",
+                                "opacity": 0.3,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 3,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            }
+                        },
+                        "retina_detect": true
+                    });
+                }
+            </script>
+
+            <!-- Typing effect -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const text = "Hello, I'm ";
+                    const typedText = document.getElementById('typed-text');
+                    let index = 0;
+
+                    function type() {
+                        if (index < text.length) {
+                            typedText.textContent += text.charAt(index);
+                            index++;
+                            setTimeout(type, 100);
+                        }
+                    }
+
+                    // Start typing
+                    type();
+                });
+            </script>
+
+            <!-- Add this script just before closing body tag -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all navigation links
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                
+                // Add click event to each link
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        // Remove active class from all links
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        
+                        // Add active class to clicked link
+                        this.classList.add('active');
+                        
+                        // Get the target section
+                        const targetId = this.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+                        
+                        if (targetSection) {
+                            // Scroll to section with offset for fixed header
+                            const headerOffset = 100;
+                            const elementPosition = targetSection.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            });
+            </script>
+        </body>
 
 </html>

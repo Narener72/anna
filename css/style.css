@@ -1,4 +1,3 @@
-
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -114,6 +113,8 @@
 .container-fluid {
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, .08);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 992px) {
@@ -505,6 +506,748 @@
     }
 }
 /*** footer End ***/
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+#particles-js {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.navbar, .carousel-caption, .header-carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    position: relative;
+    z-index: 2;
+    padding: 15px 0;
+}
+
+.navbar-brand h1 {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0B2154 !important;
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover h1 {
+    color: #1a3a80 !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.carousel-caption {
+    position: relative;
+    z-index: 2;
+    margin-top: 120px;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container-fluid,
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.header-carousel {
+    margin-top: 20px;
+}
+
+/* Add Google Font in your head section if not already added */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.fancy-name-container {
+    margin-bottom: 30px;
+}
+
+.fancy-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+    background: linear-gradient(45deg, #fff, #e0e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.name-underline {
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    margin: 0 auto;
+    animation: underlineExpand 1.5s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Make sure the text stays visible on all backgrounds */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+}
+
+/* Waving hand animation */
+.wave {
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+.typing-text {
+    min-height: 42px;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+/* Typing effect container */
+.welcome-text {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Welcome section styles */
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Wave animation */
+.wave {
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 15px;
+    animation: wave 2.5s ease-in-out infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Typing effect */
+.typing-text {
+    display: inline-block;
+    min-height: 42px;
+    position: relative;
+}
+
+.typing-text::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Simple greeting styles */
+.simple-greeting {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hand {
+    display: inline-block;
+    animation: wave 3s infinite;
+    transform-origin: 70% 70%;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Floating finance icons */
+.finance-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-icon {
+    position: fixed;
+    color: rgba(33, 36, 177, 0.2);
+    animation: float 15s linear infinite;
+    font-size: 24px;
+}
+
+.floating-icon:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-icon:nth-child(2) { left: 20%; animation-delay: -2s; }
+.floating-icon:nth-child(3) { left: 30%; animation-delay: -4s; }
+.floating-icon:nth-child(4) { left: 40%; animation-delay: -6s; }
+.floating-icon:nth-child(5) { left: 60%; animation-delay: -8s; }
+.floating-icon:nth-child(6) { left: 70%; animation-delay: -10s; }
+.floating-icon:nth-child(7) { left: 80%; animation-delay: -12s; }
+.floating-icon:nth-child(8) { left: 90%; animation-delay: -14s; }
+
+@keyframes float {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        top: 110%;
+        transform: translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for fixed header */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Active nav link state */
+.navbar-nav .nav-link.active {
+    color: #2124B1 !important;
+    font-weight: 600;
+}
+
+/* Hover effect on nav links */
+.navbar-nav .nav-link:hover {
+    color: #2124B1 !important;
+    transition: color 0.3s ease;
+}
+
+/* Section spacing */
+section {
+    padding-top: 100px;
+    margin-top: -100px;
+    margin: 0;
+}
+
+/* Navigation link styles */
+.navbar-nav .nav-link {
+    position: relative;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #2124B1 !important;
+}
+
+/* Add underline effect on hover */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #2124B1;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 80%;
+    left: 10%;
+}
+
+/* Fix spacing issues */
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Remove any extra margins */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Ensure consistent section spacing */
+section {
+    margin: 0;
+}
+
+/* Remove any floating gaps */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Adjust row spacing */
+.row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Reset g-5 spacing */
+.g-5 {
+    --bs-gutter-y: 1.5rem !important;
+}
+
+/* Remove any margin from wow elements */
+.wow {
+    margin-top: 0 !important;
+}
+
+/* Ensure sections are directly adjacent */
+.py-5 + .py-5 {
+    padding-top: 0 !important;
+}
+
+/* Fancy brand name styling */
+.fancy-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(45deg, #2124B1, #4777ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: gradient 3s ease infinite;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.fancy-brand span {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.fancy-brand::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #2124B1, #4777ef);
+    transition: width 0.3s ease;
+}
+
+.navbar-brand:hover .fancy-brand::after {
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Make sure the link doesn't have the default underline */
+.navbar-brand {
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+/* Import Google Fonts with bold weight */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap');
+
+.fancy-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 800;
+}
+
+.first-name {
+    background: linear-gradient(45deg, #2C3E50, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.last-name {
+    background: linear-gradient(45deg, #3498db, #2C3E50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    position: relative;
+    overflow: visible;
+    padding: 0 15px;
+}
+
+.navbar-brand:hover .first-name {
+    animation: shimmer 2s infinite;
+}
+
+.navbar-brand:hover .last-name {
+    animation: shimmer 2s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Import a more modern, premium font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+.fancy-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.first-name, .last-name {
+    background: linear-gradient(45deg, #1a1a1a, #4a4a4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.initial {
+    color: #2124B1;
+    background: linear-gradient(45deg, #2124B1, #4777ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    text-decoration: none;
+    position: relative;
+    padding: 0 15px;
+}
+
+.navbar-brand:hover .initial {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #2124B1,
+                     0 0 10px #2124B1,
+                     0 0 15px #4777ef;
+    }
+    to {
+        text-shadow: 0 0 10px #2124B1,
+                     0 0 20px #2124B1,
+                     0 0 30px #4777ef;
+    }
+}
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+.fancy-brand {
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: linear-gradient(120deg, #2124B1, #4777ef, #2124B1);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    letter-spacing: 0.5px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.navbar-brand {
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Add logo styling */
+.brand-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid #0B2154;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo {
+    transform: scale(1.1);
+}
+
+/* Keep your existing navbar-brand h1 styles */
+.navbar-brand h1 {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0B2154 !important;
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover h1 {
+    color: #1a3a80 !important;
+}
+
+/* Updated logo styling */
+.brand-logo {
+    width: 40px;  /* Slightly smaller */
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid #0B2154;  /* Darker blue border */
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo {
+    transform: scale(1.1);
+}
+
+/* Updated name styling with darker blue */
+.navbar-brand h1 {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0B2154 !important;  /* Darker blue color */
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover h1 {
+    color: #1a3a80 !important;  /* Slightly lighter on hover */
+}
+
+/* Fancy Skill Cards - with !important to ensure styles are applied */
+.skill-card {
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 30px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    height: 100% !important;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+
+.skill-content {
+    text-align: center !important;
+}
+
+.skill-title {
+    color: #0B2154 !important;
+    margin: 15px 0 !important;
+    font-weight: 600 !important;
+}
+
+.skill-description {
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    margin: 0 !important;
+}
+
+.skill-card:hover i {
+    transform: scale(1.1) !important;
+}
+
+.skill-card i {
+    transition: all 0.3s ease !important;
+}
+
+/* Update skill section spacing */
+#skills.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#skills .container {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+}
+
+/* Keep existing skill card styles */
+.skill-card {
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    margin: 15px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    height: 100% !important;
+}
+
+/* Rest of your existing skill card styles remain the same */
 
 
 
